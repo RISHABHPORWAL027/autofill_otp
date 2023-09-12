@@ -32,12 +32,12 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/* <form action="/verify-otp" method="POST"> */}
-          <label>Auto Fill otp : </label>
+          <label>Automatically Fill otp : </label>
           <input type="text"
             value={otp}
             onChange={(e)=>setOtp(e.target.value)}
             inputMode="numeric"
-            autoComplete="one-time-code"
+           // autoComplete="one-time-code"
             pattern="\d{6}"
             
             required />
