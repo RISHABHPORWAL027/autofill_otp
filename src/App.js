@@ -14,7 +14,7 @@ function App() {
   useEffect(()=>{
     const ac = new AbortController();
     const otpFill=()=>{
-      conosole.log("navigator",navigator.credentials);
+      console.log("navigator",navigator.credentials);
       navigator.credentials.get({
         otp: { transport:['sms'] },
         signal: ac.signal
