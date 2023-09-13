@@ -14,6 +14,7 @@ function App() {
   useEffect(()=>{
     const ac = new AbortController();
     const otpFill=()=>{
+      conosole.log("navigator",navigator.credentials);
       navigator.credentials.get({
         otp: { transport:['sms'] },
         signal: ac.signal
@@ -31,6 +32,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+     <label>Automatically Fill otp : </label>
         {/* <form action="/verify-otp" method="POST"> 
           <label>Automatically Fill otp : </label>
           <input type="text"
