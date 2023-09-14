@@ -33,7 +33,7 @@ function App() {
     <div className="App">
       <header className="App-header">
      <label>Automatically Fill otp : </label>
-        {/* <form action="/verify-otp" method="POST"> 
+  {/* <form action="/verify-otp" method="POST"> */}
           <label>Automatically Fill otp : </label>
           <input type="text"
             value={otp}
@@ -42,7 +42,7 @@ function App() {
            // autoComplete="one-time-code"
             pattern="\d{6}"
             
-            required />*/}
+            required />
         {/* </form> */}
 
       </header>
