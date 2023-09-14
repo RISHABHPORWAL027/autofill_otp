@@ -32,7 +32,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-     <label>Automatically Fill otp : </label>
+    
   {/* <form action="/verify-otp" method="POST"> */}
           <label>Automatically Fill otp : </label>
           <input type="text"
