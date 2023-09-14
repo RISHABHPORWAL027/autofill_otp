@@ -35,7 +35,7 @@ function App() {
     <input type="tel"
             //value={otp}
             //onChange={(e)=>setOtp(e.target.value)}
-            inputMode="numeric"
+            //inputMode="numeric"
            autoComplete="one-time-code"
             pattern="[0-9]*"
             
