@@ -11,38 +11,38 @@ function App() {
     }
   },[])
 
-  useEffect(()=>{
-    const ac = new AbortController();
-    const otpFill=()=>{
-      console.log("navigator",navigator.credentials);
-      navigator.credentials.get({
-        otp: { transport:['sms'] },
-        signal: ac.signal
-      }).then(otp => {
-        alert(otp.code)
-        setOtp(otp.code)
-      }).catch(err => {
-        console.log(err)
-      });
-    }
+  // useEffect(()=>{
+  //   const ac = new AbortController();
+  //   const otpFill=()=>{
+  //     console.log("navigator",navigator.credentials);
+  //     navigator.credentials.get({
+  //       otp: { transport:['sms'] },
+  //       signal: ac.signal
+  //     }).then(otp => {
+  //       alert(otp.code)
+  //       setOtp(otp.code)
+  //     }).catch(err => {
+  //       console.log(err)
+  //     });
+  //   }
 
-      otpFill()
-  })
+  //     otpFill()
+  // })
 
   return (
     <div className="App">
       <header className="App-header">
-    
-  {/* <form action="/verify-otp" method="POST"> */}
-          <label>Automatically Fill otp : </label>
-          <input type="text"
-            value={otp}
-            onChange={(e)=>setOtp(e.target.value)}
-            inputMode="numeric"
-           // autoComplete="one-time-code"
-            pattern="\d{6}"
+    <input type="number"
+            //value={otp}
+            //onChange={(e)=>setOtp(e.target.value)}
+            //inputMode="numeric"
+           autoComplete="one-time-code"
+            pattern="[0-9]*"
             
             required />
+  {/* <form action="/verify-otp" method="POST"> */}
+          <label>Automatically Fill otp : </label>
+          
         {/* </form> */}
 
       </header>
