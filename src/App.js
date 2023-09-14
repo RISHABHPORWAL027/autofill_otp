@@ -32,16 +32,16 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-    <input type="number"
+    <input type="tel"
             //value={otp}
             //onChange={(e)=>setOtp(e.target.value)}
-            //inputMode="numeric"
+            inputMode="numeric"
            autoComplete="one-time-code"
             pattern="[0-9]*"
             
             required />
   {/* <form action="/verify-otp" method="POST"> */}
-          <label>Automatically Fill otp : </label>
+          <label>Automaticallys Fill otp : </label>
           
         {/* </form> */}
 
